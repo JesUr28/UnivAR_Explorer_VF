@@ -244,3 +244,4 @@ document.addEventListener("DOMContentLoaded", () => {
     markerImg.style.animationDuration = `${randomDuration}s`
   })
 })
+
