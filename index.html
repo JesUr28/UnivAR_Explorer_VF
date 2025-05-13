@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnivAR Explorer - Universidad Popular del Cesar Aguachica en Realidad Aumentada</title>
+  <link rel="stylesheet" href="home-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+      <!-- Header -->
+      <header>
+          <div class="container">
+              <div class="logo">
+                  <i class="fas fa-university"></i>
+                  <h1>UnivAR Explorer</h1>
+              </div>
+              <div class="search-container">
+                  <form id="search-form">
+                      <button type="submit"><i class="fas fa-search"></i></button>
+                      <input type="text" id="search-input" placeholder="Buscar en UPC Aguachica...">
+                  </form>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a href="#inicio">Inicio</a></li>
+                      <li><a href="#universidad">Universidad</a></li>
+                      <li><a href="#valores">Valores</a></li>
+                      <li><a href="#carreras">Carreras</a></li>
+                      <li><a href="#perfiles">Perfiles</a></li>
+                  </ul>
+              </nav>
+              <div class="menu-toggle">
+                  <i class="fas fa-bars"></i>
+              </div>
+          </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="inicio" class="hero">
+          <div class="container">
+              <div class="hero-content">
+                  <h1>Explora la UPC sin entrar en ella</h1>
+                  <p>Descubre nuestra universidad como nunca antes, con modelos 3D interactivos que cobran vida a través de tu cámara, donde cada experiencia visual se transforma en aprendizaje significativo.</p>
+                  <div class="hero-buttons">
+                      <a href="#experiencias" class="cta-button">
+                          <i class="fas fa-vr-cardboard"></i>
+                          Ver Experiencias AR
+                      </a>
+                      <a href="#instrucciones" class="secondary-button">
+                          <i class="fas fa-info-circle"></i>
+                          ¿Cómo Funciona?
+                      </a>
+                  </div>
+              </div>
+              <div class="hero-image">
+                  <img src="images/dino.png" alt="UPC en Realidad Aumentada" class="floating">
+              </div>
+          </div>
+      </section>
+
+      <!-- Features Section -->
+      <!-- Experiencias AR Section -->
+      <section id="experiencias" class="section-container">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Experiencias en Realidad Aumentada</h2>
+                  <p class="section-description">Explora todas nuestras experiencias AR disponibles y sumérgete en el mundo virtual de la UPC Aguachica.</p>
+              </div>
+              
+              <div class="experience-grid">
+                  <div class="experience-card">
+                      <div class="experience-icon">
+                          <i class="fas fa-university"></i>
+                      </div>
+                      <h3>Conoce la Universidad</h3>
+                      <p>Enterate de nuestra historia, vision, mision y simbolos representativos.</p>
+                      <a href="Universidad_AR/ar-viewer.html" class="ar-button">Iniciar Experiencia</a>
+                  </div>
+                  
+                  <div class="experience-card">
+                      <div class="experience-icon">
+                          <i class="fas fa-handshake"></i>
+                      </div>
+                      <h3>Valores Institucionales</h3>
+                      <p>Interactúa con los valores que nos definen.</p>
+                      <a href="ValoresInstitucionales_AR/ar-viewer.html" class="ar-button">Iniciar Experiencia</a>
+                  </div>
+                  
+                  <div class="experience-card">
+                      <div class="experience-icon">
+                          <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <h3>Carreras de pregrados</h3>
+                      <p>Conoce nuestra oferta académica en 3D.</p>
+                      <a href="ar-viewer-carreras.html" class="ar-button">Iniciar Experiencia</a>
+                  </div>
+                
+                  <div class="experience-card">
+                      <div class="experience-icon">
+                          <i class="fas fa-user-tie"></i>
+                      </div>
+                      <h3>Perfiles Profesionales</h3>
+                      <p>Visualiza el futuro laboral de nuestros egresados.</p>
+                      <a href="ar-viewer-perfiles.html" class="ar-button">Iniciar Experiencia</a>
+                  </div>
+                  
+              </div>
+          </div>
+      </section>
+
+      <!-- Instructions Section -->
+      <section id="instrucciones" class="instructions alt-bg">
+          <div class="container">
+              <h2>Cómo Usar la Aplicación</h2>
+              <div class="instructions-grid">
+                  <div class="instruction-card">
+                      <div class="instruction-number">1</div>
+                      <h3>Elige una Experiencia</h3>
+                      <p>Selecciona la experiencia AR que deseas explorar de las secciones anteriores.</p>
+                  </div>
+                  
+                  <div class="instruction-card">
+                      <div class="instruction-number">2</div>
+                      <h3>Descarga los Marcadores</h3>
+                      <p>Imprime los marcadores correspondientes a la experiencia seleccionada.</p>
+                  </div>
+                  
+                  <div class="instruction-card">
+                      <div class="instruction-number">3</div>
+                      <h3>Inicia la Aplicación AR</h3>
+                      <p>Haz clic en el botón "Ver Experiencias AR" para abrir la cámara de realidad aumentada.</p>
+                  </div>
+                  
+                  <div class="instruction-card">
+                      <div class="instruction-number">4</div>
+                      <h3>Apunta a los Marcadores</h3>
+                      <p>Dirige la cámara hacia los marcadores impresos para ver los modelos 3D y la información.</p>
+                  </div>
+              </div>
+              
+              <div class="download-all">
+                  <a href="docs/todos-los-marcadores.pdf" class="cta-button">
+                      <i class="fas fa-download"></i>
+                      Descargar Todos los Marcadores
+                  </a>
+              </div>
+          </div>
+      </section>
+
+
+      <!-- Universidad Section -->
+      <section id="universidad" class="section-container">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Nuestra Universidad</h2>
+                  <p class="section-description">Conoce la Universidad Popular del Cesar Seccional Aguachica a través de experiencias interactivas en realidad aumentada.</p>
+                  <div class="section-actions">
+                      <a href="Universidad_AR/ar-viewer.html" class="section-button ar-button">
+                          <i class="fas fa-vr-cardboard"></i>
+                          Ver Experiencias AR
+                      </a>
+                      <a href="imagesUniversidad/universidad.pdf" class="section-button download-button">
+                          <i class="fas fa-download"></i>
+                          Descargar Marcadores
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="faculty-tabs">
+                  <button class="faculty-tab active" data-faculty="universidad">Universidad</button>
+                  <button class="faculty-tab" data-faculty="simbolos">Símbolos Institucionales</button>
+                  <button class="faculty-tab" data-faculty="logo">Logo</button>
+              </div>
+              
+              <div class="faculty-content active" id="universidad-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/HistoriaUniversidad.png" alt="Historia UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Historia</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/Mision.png" alt="Misión UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Misión</h3>                  
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/Vision.png" alt="Visión UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Visión</h3>                         
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faculty-content" id="simbolos-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/Escudo.png" alt="Escudo UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Escudo</h3>
+                          </div>
+                      </div>
+
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/Bandera.png" alt="Bandera UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Bandera</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/Himno.png" alt="Himno UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Himno</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faculty-content" id="logo-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesUniversidad/Logo.png" alt="Logo UPC">
+                          </div>
+                          <div class="content-info">
+                              <h3>Logo</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Valores Institucionales Section -->
+      <section id="valores" class="section-container alt-bg">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Valores Institucionales</h2>
+                  <p class="section-description">Explora los valores que guían nuestra institución y forman parte fundamental de la formación de nuestros estudiantes.</p>
+                  <div class="section-actions">
+                      <a href="ValoresInstitucionales_AR/ar-viewer.html" class="section-button ar-button">
+                          <i class="fas fa-vr-cardboard"></i>
+                          Ver Experiencias AR
+                      </a>
+                      <a href="imagesValores/valores.pdf" class="section-button download-button">
+                          <i class="fas fa-download"></i>
+                          Descargar Marcadores
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="content-grid">
+
+                    <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="imagesValores/Honestidad.png" alt="Honestidad">
+                        </div>
+                        <div class="content-info">
+                            <h3>Honestidad</h3>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="imagesValores/Respeto.png" alt="Respeto">
+                        </div>
+                        <div class="content-info">
+                            <h3>Respeto</h3>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="imagesValores/Justicia.png" alt="Justicia">
+                        </div>
+                        <div class="content-info">
+                            <h3>Justicia</h3>
+                        </div>
+                    </div>
+                
+                    <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="imagesValores/Compromiso.png" alt="compromiso">
+                        </div>
+                        <div class="content-info">
+                            <h3>Compromiso</h3>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="imagesValores/Diligencia.png" alt="Diligencia">
+                        </div>
+                        <div class="content-info">
+                            <h3>Diligencia</h3>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="imagesValores/Veracidad.png" alt="LealtadVeracidad">
+                        </div>
+                        <div class="content-info">
+                            <h3>Veracidad</h3>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Carreras Universitarias Section -->
+      <section id="carreras" class="section-container">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Carreras Universitarias</h2>
+                  <p class="section-description">Explora nuestra oferta académica y descubre los programas que ofrecemos en las diferentes facultades.</p>
+                  <div class="section-actions">
+                      <a href="ar-viewer-carreras.html" class="section-button ar-button">
+                          <i class="fas fa-vr-cardboard"></i>
+                          Ver Experiencias AR
+                      </a>
+                      <a href="docs/marcadores-carreras.pdf" class="section-button download-button">
+                          <i class="fas fa-download"></i>
+                          Descargar Marcadores
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="faculty-tabs">
+                  <button class="faculty-tab active" data-faculty="ingenieria">Programas de Ingeniería</button>
+                  <button class="faculty-tab" data-faculty="salud">Programa de ciencias administrativas contables y económicas</button>
+                  <button class="faculty-tab" data-faculty="administrativas">Facultad de derecho, ciencias políticas y sociales</button>
+              </div>
+              
+              <div class="faculty-content active" id="ingenieria-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="images/ing-sistemas.png" alt="Ingeniería de Sistemas">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingeniería de Sistemas</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="images/ing-electronica.png" alt="Ingeniería Electrónica">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingeniería Agroindustrial</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="images/ing-ambiental.png" alt="Ingeniería Ambiental">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingeniería Ambiental y Sanitaria</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="images/ing-civil.png" alt="Ingeniería Civil">
+                        </div>
+                        <div class="content-info">
+                            <h3>Ingeniería Agropecuaria</h3>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="faculty-content" id="salud-content">
+                  <!-- Contenido para Ciencias Administrativas -->
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="images/enfermeria.png" alt="Enfermería">
+                          </div>
+                          <div class="content-info">
+                              <h3>Administración de Empresas</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="images/microbiologia.png" alt="Microbiología">
+                          </div>
+                          <div class="content-info">
+                              <h3>Contaduría Pública</h3>
+                          </div>
+                      </div>
+
+                      <div class="content-card">
+                        <div class="content-image marker-protection">
+                            <div class="download-indicator"><i class="fas fa-download"></i></div>
+                            <img src="images/microbiologia.png" alt="Microbiología">
+                        </div>
+                        <div class="content-info">
+                            <h3>Economía</h3>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="faculty-content" id="administrativas-content">
+                  <!-- Contenido para Ciencias Administrativas -->
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="images/administracion.png" alt="Administración de Empresas">
+                          </div>
+                          <div class="content-info">
+                              <h3>Derecho</h3>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              
+          </div>
+      </section>
+
+      <!-- Perfiles Profesionales Section -->
+      <section id="perfiles" class="section-container alt-bg">
+          <div class="container">
+              <div class="section-header">
+                  <h2>Perfiles Profesionales</h2>
+                  <p class="section-description">Conoce las competencias y campos de acción de nuestros egresados en las diferentes áreas del conocimiento.</p>
+                  <div class="section-actions">
+                      <a href="ar-viewer-perfiles.html" class="section-button ar-button">
+                          <i class="fas fa-vr-cardboard"></i>
+                          Ver Experiencias AR
+                      </a>
+                      <a href="docs/marcadores-perfiles.pdf" class="section-button download-button">
+                          <i class="fas fa-download"></i>
+                          Descargar Marcadores
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="faculty-tabs">
+                  <button class="faculty-tab active" data-faculty="ingenieria-perfiles">Ingeniería</button>
+                  <button class="faculty-tab" data-faculty="administrativas-perfiles">Ciencias Administrativas</button>
+                  <button class="faculty-tab" data-faculty="derecho-perfiles">Derecho</button>
+              </div>
+              
+              <div class="faculty-content active" id="ingenieria-perfiles-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/IngenieroSistemas.png" alt="Perfil Sistemas">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingeniero/a de Sistemas</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/IngenieroAgro.png" alt="Perfil Agroindustrial">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingenierio/a Agroindustrial</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/IngenieroAmbiental.png" alt="Perfil Ambiental">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingeniero/a Ambiental y Sanitario</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/Agropecuario.png" alt="Perfil Agropecuario">
+                          </div>
+                          <div class="content-info">
+                              <h3>Ingenierio/a Agropecuario</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faculty-content" id="administrativas-perfiles-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/AdminEmpresas.png" alt="Perfil AdminEmpresas">
+                          </div>
+                          <div class="content-info">
+                              <h3>Administrador/a de Empresas</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/contador.png" alt="Perfil contador">
+                          </div>
+                          <div class="content-info">
+                              <h3>Contador/a Público</h3>
+                          </div>
+                      </div>
+                      
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/Economista.png" alt="Perfil Economista">
+                          </div>
+                          <div class="content-info">
+                              <h3>Economista</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="faculty-content" id="derecho-perfiles-content">
+                  <div class="content-grid">
+                      <div class="content-card">
+                          <div class="content-image marker-protection">
+                              <div class="download-indicator"><i class="fas fa-download"></i></div>
+                              <img src="imagesPerfiles/Abogado.png" alt="Perfil Abogado">
+                          </div>
+                          <div class="content-info">
+                              <h3>Abogado/a</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      
+      <!-- CTA Section -->
+      <section class="cta">
+          <div class="container">
+              <h2>¿Listo para Explorar la UPC Aguachica en Realidad Aumentada?</h2>
+              <p>Inicia tu viaje virtual por la Universidad Popular del Cesar - Seccional Aguachica y descubre todo lo que tenemos para ofrecerte.</p>
+              <div class="cta-buttons">
+                  <a href="#experiencias" class="cta-button pulse">
+                      <i class="fas fa-play"></i>
+                      Comenzar Ahora
+                  </a>
+                  <a href="https://upcaguachica.unicesar.edu.co/" target="_blank" class="secondary-button">
+                      <i class="fas fa-external-link-alt"></i>
+                      Visitar Sitio Oficial UPC Aguachica
+                  </a>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+              <div class="footer-content">
+                  <div class="footer-logo">
+                      <i class="fas fa-university"></i>
+                      <h3>UPC Explorer</h3>
+                      <p>Una experiencia educativa en realidad aumentada de la Universidad Popular del Cesar - Seccional Aguachica.</p>
+                  </div>
+                  <div class="footer-links">
+                      <h4>Enlaces Rápidos</h4>
+                      <ul>
+                          <li><a href="#inicio">Inicio</a></li>
+                          <li><a href="#universidad">Universidad</a></li>
+                          <li><a href="#valores">Valores</a></li>
+                          <li><a href="#carreras">Carreras</a></li>
+                          <li><a href="#perfiles">Perfiles</a></li>
+                          <li><a href="#experiencias">Experiencias AR</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-contact">
+                      <h4>Contacto</h4>
+                      <p><i class="fas fa-map-marker-alt"></i> Sede Principal: Valledupar, Cesar</p>
+                      <p><i class="fas fa-map-marker-alt"></i> Seccional Aguachica</p>
+                      <p><i class="fas fa-envelope"></i> info.aguachica@unicesar.edu.co</p>
+                      <p><i class="fas fa-phone"></i> +57 (605) 565 2595</p>
+                      <div class="social-icons">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <p>&copy; 2023 Universidad Popular del Cesar - Seccional Aguachica. Todos los derechos reservados.</p>
+              </div>
+          </div>
+      </footer>
+  </div>
+
+  <script src="home-script.js"></script>
+</body>
+</html>
