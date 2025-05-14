@@ -37,12 +37,12 @@ const texts = {
       "El Ingeniero Agroindustrial de la UPCSA está en la capacidad de:\n\n Diseñar y aplicar procesos de transformación de materias primas de origen biológico procedentes del sector primario para la obtención de productos industriales y su comercialización. \n Formular y liderar proyectos productivos, de investigación y transferencia tecnológica. \n\ Generar soluciones a la problemática agroindustrial de la región. \n Promover el desarrollo sostenible y ambiental, en concordancia con las políticas económicas nacionales e      internacionales. \n Comprender los sistemas integrados de gestión. \n Desarrollar su espíritu investigativo en los procesos agroindustriales. ",
   },
   ambiental: {
-    title: "Perfil: Ingeneiro Ambiental y Sanitario",
+    title: "Perfil: Ingeniero Ambiental y Sanitario",
     content:
       "El Ingeniero Ambiental y Sanitario egresado de la UPC seccional Aguachica, es integral con pensamiento crítico, reflexivo y creativo, de espíritu emprendedor e investigativo, capaz de asumir el liderazgo en procesos de gestión ambiental y alternativas sostenibles asociadas a los modelos económicos de desarrollo, quien basado en el principio de precaución y el funcionamiento sistémico los procesos naturales, promueven la solución a problemas generados por los sistemas de producción, saneamiento básico e impacto de la globalización; con capacidad de trabajo en equipo, comunicación asertiva, visión  holística coherente con la ética, el civismo y la moral, responsable y legalmente. ",
   },
   agropecuario: {
-    title: "Perfil: Ingeniero/a Agropecurio",
+    title: "Perfil: Ingeniero Agropecurio",
     content:
       "El Ingeniero Agropecuario de la UPCSA, será un profesional con capacidades científicas, tecnológicas y de la ingeniería aplicada propia del campo de conocimiento que le permitirán Diseñar, Desarrollar, Implementar y Liderar sistemas de producción agropecuarios con responsabilidad ambiental, social y ética; promoviendo soluciones y alternativas sustentables a problemáticas contextuales de seguridad e independencia alimentaria mediante la aplicación de estrategias innovadoras y de emprendimiento. ",
   },
