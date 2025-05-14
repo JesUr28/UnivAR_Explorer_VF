@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Modelo 3D en AR</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+    <!-- Añadir aframe-animation-component para animaciones más avanzadas -->
+    <script src="https://unpkg.com/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>
+    <link rel="stylesheet" href="../styles_AR.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Contenedor del modelo 3D -->
+        <div id="model-container">
+            <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; debugUIEnabled: false; matrixCodeType: 3x3; smoothCount: 7; smoothTolerance: 0.01; smoothThreshold: 5;"
+                     vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true; alpha: true; precision: high; antialias: true;"
+                     gesture-detector>
+                <a-assets>
+                    <a-asset-item id="C_sistemas" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/IngSistemas.glb"></a-asset-item>
+                    <a-asset-item id="C_agroindustrial" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/IngAgroindustrial.glb"></a-asset-item>
+                    <a-asset-item id="C_ambiental" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/IngAmbiental.glb"></a-asset-item>             
+                    <a-asset-item id="C_agropecuario" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/escudo10.glb"></a-asset-item>
+                    <a-asset-item id="C_administrador" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/Administracion.glb"></a-asset-item>
+                    <a-asset-item id="C_contador" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/Contaduria.glb"></a-asset-item>
+                    <a-asset-item id="C_economista" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/economia.glb"></a-asset-item>
+                    <a-asset-item id="C_abogado" src="https://cdn.glitch.global/f24dfbcf-5d5a-489d-b6c0-b547e6c91644/MISIONP1.glb"></a-asset-item>
+                </a-assets>
+                
+                <!-- Marcadores-->
+                <a-marker type="pattern" url="markers/pattern-IS.patt" id="marker-C_sistemas" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_sistemas-model" gltf-model="#C_sistemas" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+                
+                <a-marker type="pattern" url="markers/pattern-AI.patt" id="marker-C_agroindustrial" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_agroindustrial-model" gltf-model="#C_agroindustrial" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+                
+                <a-marker type="pattern" url="markers/pattern-AM.patt" id="marker-C_ambiental" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_ambiental-model" gltf-model="#C_ambiental" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+
+                <a-marker type="pattern" url="markers/pattern-AP.patt" id="marker-C_agropecuario" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_agropecuario-model" gltf-model="#C_agropecuario" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+                
+                <a-marker type="pattern" url="markers/pattern-AD.patt" id="marker-C_administrador" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_administrador-model" gltf-model="#C_administrador" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+
+                <a-marker type="pattern" url="markers/pattern-CT.patt" id="marker-C_contador" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_contador-model" gltf-model="#C_contador" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+
+                <a-marker type="pattern" url="markers/pattern-EC.patt" id="marker-C_economista" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_economista-model" gltf-model="#C_economista" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+
+                <a-marker type="pattern" url="markers/pattern-DR.patt" id="marker-C_abogado" emitevents="true" smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="5">
+                    <a-entity id="C_abogado-model" gltf-model="#C_abogado" scale="0.6 1 1"
+                              position="0 -1.5 0" animation-mixer="loop: repeat" 
+                              class="clickable" gesture-handler>
+                    </a-entity>
+                </a-marker>
+                
+                <a-entity camera></a-entity>
+            </a-scene>
+        </div>
+        
+        <!-- Contenedor del texto -->
+        <div id="info-box">
+            <div class="button-container">
+                <button id="play-btn" class="speak-button hidden">
+                    <span id="play-text">▶️ Reproducir</span>
+                    <span id="loading-text" class="hidden">
+                        <span class="loading-spinner"></span> Cargando...
+                    </span>
+                </button>
+                <button id="stop-btn" class="speak-button hidden">⏹️ Detener</button>
+                <button id="scan-new-btn" class="speak-button hidden">🔍 Escanear nuevo</button>
+            </div>
+            <div id="instruction-message" class="instruction">
+                <h2>Instrucciones</h2>
+                <p>Escanea uno de los marcadores para ver el modelo 3D y su información. ¡¡Diviertete!! Interactua con el modelo para darle forma</p>
+            </div>
+            <h2 id="title" class="hidden"></h2>
+            <p id="valor-text" class="hidden"></p>
+        </div>
+    </div>
+    
+    <!-- Mensaje de advertencia para dispositivos de escritorio -->
+    <div id="desktop-warning">
+        <h2>¡Atención!</h2>
+        <p>Esta aplicación está diseñada exclusivamente para dispositivos móviles. En pantallas grandes, el diseño puede verse distorsionado y la experiencia AR no funcionará correctamente.</p>
+        <div>
+            <button id="back-btn">Regresar</button>
+        </div>
+    </div>
+    
+    <!-- Mensaje de advertencia para orientación horizontal mejorado -->
+    <div id="landscape-warning">
+        <div class="warning-content">
+            <div class="warning-icon">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            </div>
+            <h2>¡Gira tu dispositivo!</h2>
+            <p>Esta experiencia AR está diseñada para verse en modo vertical.</p>
+            <div class="phone-container">
+                <div class="phone horizontal">
+                    <div class="phone-inner"></div>
+                    <div class="phone-screen"></div>
+                    <div class="cross-icon">✕</div>
+                </div>
+                <div class="arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+                <div class="phone vertical">
+                    <div class="phone-inner"></div>
+                    <div class="phone-screen"></div>
+                    <div class="check-icon">✓</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
