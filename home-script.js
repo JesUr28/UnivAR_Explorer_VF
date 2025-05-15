@@ -23,33 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll("nav a")
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (navMenu) {
-        navMenu.classList.remove("active")
+      navMenu.classList.remove("active")
 
-        // Restaurar icono del menú
-        const icon = menuToggle?.querySelector("i")
-        if (icon) {
-          icon.classList.remove("fa-times")
-          icon.classList.add("fa-bars")
-        }
-      }
+      // Restaurar icono del menú
+      const icon = menuToggle.querySelector("i")
+      icon.classList.remove("fa-times")
+      icon.classList.add("fa-bars")
     })
-  })
-
-  // Cerrar menú al hacer clic fuera de él
-  document.addEventListener("click", (e) => {
-    if (navMenu && navMenu.classList.contains("active")) {
-      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        navMenu.classList.remove("active")
-
-        // Restaurar icono del menú
-        const icon = menuToggle.querySelector("i")
-        if (icon) {
-          icon.classList.remove("fa-times")
-          icon.classList.add("fa-bars")
-        }
-      }
-    }
   })
 
   // Animación de scroll suave para enlaces internos
