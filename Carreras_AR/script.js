@@ -34,27 +34,27 @@ const texts = {
   C_agroindustrial: {
     title: "Carrera: Ingeniería Agroindustrial",
     content:
-      "El programa de Ingeniería Agroindustrial de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, ofertado en modalidad presencial, jornada única y con una duración de 10 semestres.\n Consta de 171 créditos académicos y pertenece a la Facultad de Ingenierías y Tecnologías. Admite hasta 100 estudiantes por semestre, con admisión semestral.\n Cuenta con Registro Calificado mediante la Resolución No. 20545 del 5 de noviembre de 2021, está registrado en el SNIES con el código 104173, fue creado mediante acuerdo institucional y el programa se ofrece en la sede ubicada en Aguachica, departamento del Cesar. ",
+      "El programa de Ingeniería Agroindustrial de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, ofertado en modalidad presencial, jornada única y con una duración de 10 semestres.\n Consta de 171 créditos académicos y pertenece a la Facultad de Ingenierías y Tecnologías. Admite hasta 100 estudiantes por semestre, con admisión semestral.\n Cuenta con Registro Calificado mediante la Resolución No. 20545 del 5 de noviembre de 2021, está registrado en el SNIES con el código 104173 y fue creado mediante acuerdo institucional. ",
   },
   C_ambiental: {
     title: "Carrera: Ingeniería Ambiental y Sanitaria",
     content:
-      "El programa de Ingeniería Ambiental y Sanitaria es un pregrado presencial de formación profesional universitaria, con jornada única y duración de 10 semestres.\n Tiene 170 créditos y pertenece a la Facultad de Ingenierías y Tecnologías de la Universidad Popular del Cesar, seccional Aguachica.\n Su capacidad máxima es de 80 estudiantes por semestre, y se ofrece con admisión semestral. Está avalado por Registro Calificado según la Resolución No. 10702 del 1 de junio de 2016, con código SNIES 105659 y el programa se ofrece en la sede ubicada en Aguachica, departamento del Cesar. ",
+      "El programa de Ingeniería Ambiental y Sanitaria es un pregrado presencial de formación profesional universitaria, con jornada única y duración de 10 semestres.\n Tiene 170 créditos y pertenece a la Facultad de Ingenierías y Tecnologías de la Universidad Popular del Cesar, seccional Aguachica.\n Su capacidad máxima es de 80 estudiantes por semestre, y se ofrece con admisión semestral. Está avalado por Registro Calificado según la Resolución No. 10702 del 1 de junio de 2016, con código SNIES 105659. ",
   },
   C_agropecuario: {
     title: "Carrera: Ingeniería Agropecuria",
     content:
-      "La Ingeniería Agropecuaria es un programa de pregrado profesional universitario, ofertado por la Universidad Popular del Cesar en su seccional Aguachica.\n Se imparte de manera presencial, en jornada única, con una duración de 9 semestres y un total de 155 créditos. Pertenece a la Facultad de Ingenierías y Tecnologías, tiene una capacidad máxima de 100 estudiantes por semestre y se ofrece con admisión semestral.\n Cuenta con Registro Calificado según la Resolución No. 2457 del 7 de marzo de 2024, su código SNIES es 116578 y el programa se ofrece en la sede ubicada en Aguachica, departamento del Cesar. ",
+      "La Ingeniería Agropecuaria es un programa de pregrado profesional universitario, ofertado por la Universidad Popular del Cesar en su seccional Aguachica.\n Se imparte de manera presencial, en jornada única, con una duración de 9 semestres y un total de 155 créditos. Pertenece a la Facultad de Ingenierías y Tecnologías, tiene una capacidad máxima de 100 estudiantes por semestre y se ofrece con admisión semestral.\n Cuenta con Registro Calificado según la Resolución No. 2457 del 7 de marzo de 2024, su código SNIES es 116578. ",
   },
   C_administrador: {
     title: "Carrera: Administración de Empresas",
     content:
-      "El programa de Administración de Empresas de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, ofrecido en modalidad presencial y con jornadas diurna y nocturna.\n Tiene una duración de 10 semestres, consta de 172 créditos académicos y pertenece a la Facultad de Ciencias Administrativas, Contables y Económicas.\n Admite un máximo de 100 estudiantes por semestre, con admisión semestral. Cuenta con Registro Calificado según la Resolución No. 13121 del 21 de julio de 2021, y está registrado en el SNIES con el código 103833.\n Su creación fue aprobada mediante norma expedida por el Consejo Superior, y el programa se ofrece en la sede ubicada en Aguachica, departamento del Cesar. ",
+      "El programa de Administración de Empresas de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, ofrecido en modalidad presencial y con jornadas diurna y nocturna.\n Tiene una duración de 10 semestres, consta de 172 créditos académicos y pertenece a la Facultad de Ciencias Administrativas, Contables y Económicas.\n Admite un máximo de 100 estudiantes por semestre, con admisión semestral. Cuenta con Registro Calificado según la Resolución No. 13121 del 21 de julio de 2021, y está registrado en el SNIES con el código 103833.\n Su creación fue aprobada mediante norma expedida por el Consejo Superior. ",
   },
   C_contador: {
   title: "Carrera: Contaduría Pública",
   content:
-    "El programa de Contaduría Pública de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, dictado de forma presencial y con jornadas diurna y nocturna.\n Tiene una duración de 10 semestres, un total de 163 créditos y pertenece a la Facultad de Ciencias Administrativas, Contables y Económicas.\n Su capacidad máxima de ingreso es de 100 estudiantes por semestre y cuenta con admisión semestral. Posee Registro Calificado según la Resolución No. 7570 del 3 de mayo de 2022, y su código SNIES es 104395. .\n Fue creado mediante acta expedida por el Consejo Superior, y el programa se ofrece en la sede ubicada en Aguachica, departamento del Cesar. ",
+    "El programa de Contaduría Pública de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, dictado de forma presencial y con jornadas diurna y nocturna.\n Tiene una duración de 10 semestres, un total de 163 créditos y pertenece a la Facultad de Ciencias Administrativas, Contables y Económicas.\n Su capacidad máxima de ingreso es de 100 estudiantes por semestre y cuenta con admisión semestral. Posee Registro Calificado según la Resolución No. 7570 del 3 de mayo de 2022, y su código SNIES es 104395.\n Fue creado mediante acta expedida por el Consejo Superior. ",
   }, 
   C_economista: {
     title: "Carrera: Economía",
@@ -64,7 +64,7 @@ const texts = {
   C_abogado: {
     title: "Carrera: Derecho",
     content:
-      "El programa de Derecho de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, ofrecido en modalidad presencial y jornada única.\n Tiene una duración de 10 semestres, 166 créditos y pertenece a la Dirección Académica de la Seccional.\n Su cupo máximo por semestre es de 35 estudiantes y la admisión es semestral. Posee Registro Calificado mediante la Resolución No. 002545 del 14 de febrero de 2025, y se desarrolla en la sede de Aguachica, Cesar. ",
+      "El programa de Derecho de la Universidad Popular del Cesar, seccional Aguachica, es un pregrado de formación profesional universitaria, ofrecido en modalidad presencial y jornada única.\n Tiene una duración de 10 semestres, 166 créditos y pertenece a la Dirección Académica de la Seccional.\n Su cupo máximo por semestre es de 35 estudiantes y la admisión es semestral. Posee Registro Calificado mediante la Resolución No. 002545 del 14 de febrero de 2025. ",
   },
 }
 
