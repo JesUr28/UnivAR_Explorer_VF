@@ -989,42 +989,38 @@ footer {
     order: 3;
     margin: 15px 0 0;
     max-width: 100%;
+    width: 100%;
   }
 
   header .container {
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 768px) {
-  section,
-  .section-container {
-    padding: 60px 0;
+  header {
+    padding: 10px 0;
   }
 
-  .hero {
-    padding: 80px 0;
+  header .container {
+    justify-content: space-between;
   }
 
-  .hero .container {
-    flex-direction: column;
-    text-align: center;
+  .logo {
+    margin-right: auto;
   }
 
-  .hero-content {
-    margin-bottom: 40px;
+  .logo h1 {
+    font-size: 1.2rem;
   }
 
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-image {
-    justify-content: center;
-  }
-
-  .hero-buttons {
-    justify-content: center;
+  .logo i {
+    font-size: 1.5rem;
   }
 
   nav ul {
@@ -1046,41 +1042,45 @@ footer {
 
   nav li {
     margin: 10px 0;
+    text-align: center;
   }
 
   .menu-toggle {
     display: block;
-  }
-
-  .section-header h2,
-  .instructions h2,
-  .cta h2 {
-    font-size: 2rem;
-  }
-
-  .faculty-tabs {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .faculty-tab {
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-  }
-
-  .section-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-button {
-    width: 100%;
-    max-width: 300px;
+    order: 2;
   }
 }
 
 @media (max-width: 480px) {
+  header .container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    gap: 5px;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  .logo i {
+    font-size: 1.3rem;
+  }
+
+  .search-container input {
+    padding: 10px 15px 10px 40px;
+    font-size: 0.85rem;
+  }
+
+  .search-container button {
+    left: 8px;
+  }
+
+  .menu-toggle {
+    font-size: 1.3rem;
+  }
+
   .hero-content h1 {
     font-size: 1.8rem;
   }
@@ -1123,5 +1123,24 @@ footer {
   .download-button {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* Añadir media query adicional para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  .logo h1 {
+    font-size: 0.9rem;
+  }
+
+  .logo i {
+    font-size: 1.2rem;
+  }
+
+  .search-container input {
+    padding: 8px 15px 8px 35px;
+  }
+
+  .menu-toggle {
+    font-size: 1.2rem;
   }
 }
